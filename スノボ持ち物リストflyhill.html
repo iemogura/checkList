@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+var count;
+function BoxChecked(check){
+	for(count = 0; count < document.form1.ck.length; count++){
+		document.form1.ck[count].checked = check;
+	}
+}
+</script>
 </head>
 <body>
-
-<input type="checkbox">	スノボ用靴下	<br>
-<input type="checkbox">	替えパンツ	<br>
-<input type="checkbox">	体拭くタオル	<br>
-
-<input type="checkbox">	濡れた物入れる袋	<br>
-
-<input type="checkbox">	財布	<br>
-
-<input type="checkbox">	軍手<br>
-<input type="checkbox">	ヘルメット	<br>
-
-<input type="checkbox">	ウェア上	<br>
-<input type="checkbox">	ウェア下	<br>
-
-<input type="checkbox">	プロテクター上	<br>
-<input type="checkbox">	プロテクター下	<br>
-
-<input type="checkbox">	ボート	<br>
-<input type="checkbox">	バインディング	<br>
-<input type="checkbox">	ブーツ	<br>
-
-<input type="checkbox">	ボード拭く雑巾	<br>
-
+<form name="form1">
+	<input type="button" onClick="BoxChecked(false)" value="解除"><br>
+	<input type="checkbox" name="ck">	スノボ用靴下	<br>
+	<input type="checkbox" name="ck">	替えパンツ	<br>
+	<input type="checkbox" name="ck">	体拭くタオル	<br>
+	<input type="checkbox" name="ck">	濡れた物入れる袋	<br>
+	<input type="checkbox" name="ck">	財布	<br>
+	<input type="checkbox" name="ck">	軍手<br>
+	<input type="checkbox" name="ck">	ヘルメット	<br>
+	<input type="checkbox" name="ck">	ウェア上	<br>
+	<input type="checkbox" name="ck">	ウェア下	<br>
+	<input type="checkbox" name="ck">	プロテクター上	<br>
+	<input type="checkbox" name="ck">	プロテクター下	<br>
+	<input type="checkbox" name="ck">	ボート	<br>
+	<input type="checkbox" name="ck">	バインディング	<br>
+	<input type="checkbox" name="ck">	ブーツ	<br>
+	<input type="checkbox" name="ck">	ボード拭く雑巾	<br>
+</form>
 </body>
 </html> 
